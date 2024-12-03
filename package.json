@@ -1,0 +1,44 @@
+{
+  "name": "my-node-ts-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/index.js",
+   "start:dev": "cross-env NODE_ENV=dev ts-node src/index.ts",
+    "start:test": "cross-env NODE_ENV=test ts-node src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/dompurify": "^3.0.5",
+    "@types/express": "^5.0.0",
+    "@types/html-pdf-node": "^1.0.2",
+    "@types/jsdom": "^21.1.7",
+    "@types/node": "^22.10.1",
+    "@types/puppeteer": "^5.4.7",
+    "cross-env": "^7.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@ironsoftware/ironpdf": "^2024.11.1",
+    "@ironsoftware/ironpdf-engine-windows-x64": "^2024.11.1",
+    "@pspdfkit/nodejs": "^0.0.6",
+    "dotenv": "^16.4.6",
+    "express": "^4.21.1",
+    "html-pdf-node": "^1.0.8",
+    "html2canvas": "^1.4.1",
+    "html2pdf-ts": "^1.2.23",
+    "jsdom": "^25.0.1",
+    "jspdf": "^2.5.2",
+    "jspdf-autotable": "^3.8.4",
+    "libreoffice-convert": "^1.6.0",
+    "playwright": "^1.49.0",
+    "puppeteer": "^23.9.0",
+    "svg2pdf.js": "^2.2.4"
+  }
+}
